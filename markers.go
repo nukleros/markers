@@ -11,10 +11,10 @@ func NewRegistry() *marker.Registry {
 	return marker.NewRegistry()
 }
 
-func Define(name string, outputType interface{}) (*marker.Definition, error) {
-	return marker.Define(name, outputType)
-}
-
 func NewParser(input string, registry parser.Registry) *parser.Parser {
 	return parser.NewParser(input, registry)
+}
+
+func Define(name string, outputType interface{}) (*marker.Definition, error) {
+	return marker.Define(name, outputType)
 }
